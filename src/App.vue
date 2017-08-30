@@ -110,9 +110,9 @@
       if (!this.$d.getCookie('dtit_user')) {
         this.$nextTick(() => {
           // 使用组件方式加载
-          this.mainPage = 'login'
+          // this.mainPage = 'login'
           // 使用f7 router加载（不会走mounted周期函数）
-          // this.$f7.views.main.router.load({url: "/login/"})
+          // this.$f7.views.main.router.load({url: '/login/'})
         })
       }
       this.$hub.$on('pageChange', (page) => {
@@ -145,6 +145,9 @@
       },
       pageChange: function (page) {
         this.mainPage = page
+      },
+      openLogin: function () {
+        this.$f7.views.main.router.load({url: '/login/'})
       }
     }
   }

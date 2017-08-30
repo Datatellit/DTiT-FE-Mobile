@@ -5,11 +5,11 @@
         <f7-list form>
             <f7-list-item>
                 <f7-label>Username</f7-label>
-                <f7-input name="username" placeholder="Username" type="text"></f7-input>
+                <f7-input name="username" v-model="username" placeholder="Username" type="text"></f7-input>
             </f7-list-item>
             <f7-list-item>
                 <f7-label>Password</f7-label>
-                <f7-input name="password" type="password" placeholder="Password"></f7-input>
+                <f7-input name="password" v-model="password" type="password" placeholder="Password"></f7-input>
             </f7-list-item>
         </f7-list>
         <f7-list>
@@ -22,13 +22,13 @@
 </template>
 <script>
   export default {
+    data () {
+      return {
+        username: '',
+        password: ''
+      }
+    },
     methods: {
-      data: function () {
-        return {
-          username: '',
-          password: ''
-        }
-      },
       login: function () {
         this.$d.setCookie('dtit_user', {username: this.username, password: this.password})
         // f7路由加载
@@ -36,11 +36,10 @@
         this.$f7.addNotification({title: '提示信息', message: '登录成功', hold: 1000})
         // 组件加载
         this.$emit('change', 'index')
-      },
-      mounted: function () {
-        console.log('login mounted init')
-        console.log(this.$data)
       }
+    },
+    mounted () {
+      console.log('login mounted init')
     }
   }
 </script>

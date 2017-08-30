@@ -87,7 +87,6 @@
                         :style="`background-color:${color};height:20px`">
                     <div @click="changeColor(color)" class="full"></div>
                 </f7-col>
-
             </f7-grid>
         </f7-block>
         <f7-popover id="about-popover">
