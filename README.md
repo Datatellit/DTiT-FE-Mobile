@@ -42,7 +42,7 @@
 * [axios](https://github.com/mzabriskie/axios) ajax网络请求库
 
 ### 快速开始这个项目，您需要了解以下信息
-* Vue全局对象([lib/frame/vue-extend.js](https://github.com/Datatellit/DTiT-FE-Desktop-AdminLTE/blob/master/lib/frame/vue-extend.js))
+* Vue全局对象([src/main.js](https://github.com/Datatellit/DTiT-FE-Mobile/blob/master/src/main.js))
 > [```this.$d```](https://github.com/Datatellit/dtit.js) 通用函数类库，如需添加新函数，请提[Issues](https://github.com/Datatellit/dtit.js/issues)   
 使用示例：  
 ```
