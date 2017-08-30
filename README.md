@@ -68,10 +68,10 @@ this.$$.each(fruits, function (index, value) {
 });
 //其他的还有非常多，自己看文档吧，哈哈    
 ```
-> ```this.$config```    
+> ```this.$config``` ([config.js](https://github.com/Datatellit/DTiT-FE-Mobile/blob/master/src/config.js))
+项目的一些配置可以放置到此处，使用参照以下：   
 ```
- this.$setting.router //访问配置文件接口路由
- this.$setting.page //访问默认分页信息
+ this.$config.xxxx //
 ```
 > ```this.$hub```非父子组件通讯(同级组件通讯，或者更深的子级通讯)  
 用于组件间的通讯，具体可参考[这里](https://cn.vuejs.org/v2/guide/components.html#非父子组件通信)
