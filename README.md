@@ -12,13 +12,14 @@
 * 其他第三方包
 >* [dtitjs](https://github.com/Datatellit/dtit.js) 通用函数库
 * 代码规范
->* [eslint](https://standardjs.com/) 代码规范使用eslint的standard模式
+>* [eslint](https://standardjs.com/) 代码规范使用eslint的standard模式  
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 ## 目录结构
 ```
  +---build      <webpack开发及发布构建脚本>
  +---config    <开发及发布配置选项文件，如本地端口，目录>
  +---dist   <生产环境上线目录>
- \---src     <Vue封装后的组件目录>
+ \---src     <项目开发源码目录>
     +---assets     <资源目录，放入image,font等>
     +---css      <通用css文件放入此目录>
     +---page       <项目页面文件夹>
