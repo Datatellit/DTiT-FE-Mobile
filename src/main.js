@@ -9,7 +9,7 @@ import Framework7Vue from 'framework7-vue'
 // Import F7 iOS Theme Styles
 import 'framework7/dist/css/framework7.ios.min.css'
 import 'framework7/dist/css/framework7.ios.colors.min.css'
-import routes from './routes'
+import routes from './router/index'
 import 'animate.css'
 // Import App Custom Styles
 import './css/app.css'
